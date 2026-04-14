@@ -1,1 +1,12 @@
+<p>When creating a hyperlink using the <code>&lt;a&gt;</code> tag, you can provide attributes to cause clicking it to open in a new browsing context (usually a new browser tab). For example:</p>
 
+<pre><code class="language-html">&lt;a href=&quot;https://www.imperial.ac.uk&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
+    Visit Imperial College London
+&lt;/a&gt;
+</code></pre>
+
+<p>This link appears as "<a href="https://www.imperial.ac.uk" target="_blank" rel="noopener noreferrer">Visit Imperial College London</a>", and clicking it will usually open the Imperial College London website in a new browser tab (or sometimes a new window, depending on browser settings).</p>
+
+<p>Here we have used two attributes which serve different purposes. <code class="language-html">target="_blank"</code> is the attribute which causes the link to open in a new browsing context, usually a new tab.</p> 
+    
+<p>The <code class="language-html">rel="noopener noreferrer"</code> attribute is a security measure which prevents the new page from being able to access the original page's window object, which can help to protect against certain types of cyber attacks. Specifying the <code>rel</code> attribute is not strictly necessary, but it is recommended for security reasons when opening links in new tabs.</p>
